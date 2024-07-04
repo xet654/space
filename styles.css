@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#content {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#image-container {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nasa-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#space-fact {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/*////////////*/
+
+#image-container {
+  width: 350px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  margin: 0 auto;
+  animation: floatContainer 5s ease-in-out infinite alternate; /* Animation properties */
+}
+
+#nasa-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes floatContainer {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-20px); /* Adjust distance as needed */
+  }
+}
+
+
+
+
+
+  
+
